@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .background {
+        width: 1200px;
+        height: 800px;
+        border: 2px solid black;
+        background-image: url("https://w0.peakpx.com/wallpaper/960/845/HD-wallpaper-nature-landscape-landscape-nature-thumbnail.jpg");
+        background-repeat: no-repeat;
+      }
+      .cover {
+        background-size: cover;
+      }
+      .auto {
+        background-size: auto;
+      }
+      .contain {
+        height: 1500px;
+        background-size: contain;
+      }
+      .values {
+        background-size: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>background-size:auto</h2>
+    <div class="background auto"></div>
+    <h2>background-size:cover</h2>
+    <div class="background cover"></div>
+    <h2>background-size:contain</h2>
+    <div class="background contain"></div>
+    <h2>background-size:values</h2>
+    <div class="background values"></div>
+  </body>
+</html>
