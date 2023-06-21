@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 1000px;
+        height: 500px;
+        margin: 50px auto;
+        /* border: 4px solid black; */
+      }
+      .box {
+        color: white;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        background-color: green;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .box2 {
+        background-color: coral;
+      }
+      .box3 {
+        background-color: lightseagreen;
+      }
+      .box4 {
+        font-size: 18px;
+        text-align: center;
+        color: black;
+        /* background-color: rgb(22, 32, 35); */
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <img
+          src="https://th.bing.com/th/id/R.d8aedc575ac32a253b5be5d25a52d598?rik=aLHj1W5emKA1Iw&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f02%2f1573618audi-car-images.jpg&ehk=EF0VdTd7DJoHQviRvsvMwZOxXN8XnzPldXhNrNT4Rl0%3d&risl=&pid=ImgRaw&r=0"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="box box2">
+        <img
+          src="https://th.bing.com/th/id/R.5984159799b0816018fee4e99b7411d5?rik=juCYPL27dy2pDw&riu=http%3a%2f%2ftonyferraricertified.com%2fwp-content%2fuploads%2f2018%2f08%2fsportscar-17583_1920.jpg&ehk=w%2fCNEgr5e37cX%2bi7bfuD64D1puZfzMxXPSjpJlzSYLw%3d&risl=&pid=ImgRaw&r=0"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="box box3">
+        <img
+          src="https://th.bing.com/th/id/R.39cb4b68f80b886dfcc3064ec7cb3759?rik=JkBYXj4Ss1x6eg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fLamborghini-mountain-fog-sports-car-photos.jpg&ehk=e1fQIG4IglOhaHkUmXVCvTdx4g7a1bC3Z6nVRUpCS1U%3d&risl=&pid=ImgRaw&r=0"
+          width="100%"
+          height="100%"
+        />
+      </div>
+
+      <div class="box box4">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur at
+          eum consectetur eius. Voluptatem neque ea nemo maiores velit atque
+          facere quae ducimus magnam pariatur quis cupiditate nihil sunt
+          voluptates ratione odio nostrum quibusdam, maxime odit expedita
+          repellat ex dolore accusamus blanditiis. Magnam excepturi, earum sint
+          enim eos dicta illum?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
