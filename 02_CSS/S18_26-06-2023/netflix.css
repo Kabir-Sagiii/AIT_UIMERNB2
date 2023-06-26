@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-image: url("https://th.bing.com/th/id/R.d2edb29f3f970c36aadecbb01ed0bb79?rik=z%2bAuuobpN0KNSg&riu=http%3a%2f%2fisquad.tv%2fwp-content%2fuploads%2f2018%2f08%2fNetflix-Background.jpg&ehk=Ij4PSd%2bZkTcESSlAVWoGpNmExM0fu3BgteNT6AnS9lM%3d&risl=&pid=ImgRaw&r=0");
+}
+.container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.headingSection {
+  height: 20%;
+  display: flex;
+}
+#logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#buttons {
+  width: 58%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.mainSection {
+  height: 75%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 58px;
+  margin: 0px 0px 10px;
+}
+p {
+  font-size: 25px;
+  margin: 0;
+}
