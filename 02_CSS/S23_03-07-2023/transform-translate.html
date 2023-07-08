@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000px;
+      }
+      .transformEle {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: red;
+      }
+
+      .transformEleX {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: blue;
+      }
+      .transformEleY {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 0, 119);
+      }
+
+      .transformEle:hover {
+        transform: translate(300px, 20px);
+        transition-duration: 5s;
+      }
+
+      .transformEleX:hover {
+        transform: translateX(500px);
+        transition-duration: 10s;
+      }
+      .transformEleY:hover {
+        transform: translateY(-100px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>translate is a transform Property value</h1>
+    <div class="transformEle"></div>
+    <br /><br />
+    <div class="transformEleX"></div>
+    <br /><br />
+    <div class="transformEleY"></div>
+  </body>
+</html>

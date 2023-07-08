@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000px;
+      }
+      .transformEle {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: red;
+      }
+      .transformEle1 {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: green;
+      }
+      .transformEleX {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: blue;
+      }
+      .transformEleY {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 0, 119);
+      }
+
+      .transformEle:hover {
+        transform: scale(4);
+      }
+      .transformEle1:hover {
+        transform: scale(0.5);
+      }
+      .transformEleX:hover {
+        transform: scaleX(5);
+      }
+      .transformEleY:hover {
+        transform: scaleY(3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>scale is a transform Property value</h1>
+    <div class="transformEle"></div>
+    <div class="transformEle1"></div>
+    <div class="transformEleX"></div>
+    <div class="transformEleY"></div>
+  </body>
+</html>
