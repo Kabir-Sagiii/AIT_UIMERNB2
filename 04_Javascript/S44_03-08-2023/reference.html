@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function getH2Reference() {
+        //Step 1: Get the reference of html element (h2)
+        var h2Ref = document.getElementById("heading");
+
+        //Step 2: Perform the Required Operation
+        h2Ref.innerText = "HTML document is manipulated using Javascript";
+        h2Ref.style.color = "green";
+
+        for (let key in h2Ref) {
+          console.log(key);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 id="heading">DOM Concept</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
+        adipisci nam asperiores ut pariatur tempore quam nostrum assumenda
+        distinctio ea.
+      </p>
+      <button onclick="getH2Reference()">Click me</button>
+    </div>
+  </body>
+</html>
