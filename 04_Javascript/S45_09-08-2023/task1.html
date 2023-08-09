@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeContent() {
+        //get the reference of html element
+        var h1Ref = document.getElementById("h1");
+        // console.log(h1Ref.id);
+        var id = h1Ref.getAttribute("name");
+        console.log(id);
+
+        h1Ref.innerText = "Hello Javascript, You have manipulated HTML Element";
+        h1Ref.style.color = "red";
+        h1Ref.style.backgroundColor = "black";
+        h1Ref.style.padding = "50px";
+        h1Ref.style.boxShadow = "0 0 10px green";
+        // for (let key in h1Ref.style) {
+        //   console.log(key);
+        // }
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <h1 id="h1" name="headingElement">Welcome to DOM Manipulation</h1>
+      <button onclick="changeContent()">Change the Content</button>
+    </div>
+  </body>
+</html>
