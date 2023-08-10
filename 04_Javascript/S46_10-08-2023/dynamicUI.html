@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createh1Element() {
+        //create h1 element
+        var h1Ref = document.createElement("h1"); // <h1> </h1>
+
+        h1Ref.innerText = "h1 element created dynamically"; //<h1>h1 element created dynamically</h1>
+        var divRef = document.querySelector("#container");
+        divRef.appendChild(h1Ref);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container" style="text-align: center; margin-top: 100px">
+      <button onclick="createh1Element()">Create h1 Element</button>
+      <h1>dkfjbvfdjkvb</h1>
+    </div>
+  </body>
+</html>
