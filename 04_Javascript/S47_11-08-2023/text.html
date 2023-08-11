@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn() {
+        var inputRef = document.getElementById("input");
+
+        var pRef = document.getElementById("p1");
+
+        var inputValue = inputRef.value;
+
+        pRef.innerText = inputValue;
+      }
+    </script>
+  </head>
+  <body style="text-align: center; margin-top: 100px">
+    <h2>Events</h2>
+    <input
+      id="input"
+      type="text"
+      placeholder="Enter Text"
+      onkeydown="fn()"
+      value=""
+    />
+    <p id="p1"></p>
+  </body>
+</html>
