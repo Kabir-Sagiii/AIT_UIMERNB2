@@ -1,6 +1,9 @@
 var obj1 = {
   c: 100,
 };
+var obj2 = {
+    c: 60,
+  };
 
 function fnThis() {
   var x = 10;
@@ -11,3 +14,4 @@ function fnThis() {
   console.log(result); //NaN
 }
 fnThis();
+fnThis()
