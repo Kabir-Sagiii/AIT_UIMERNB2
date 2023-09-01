@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getdata() {
+        fetch("https://fakestoreapi.com/products")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+            var ol = document.createElement("ol");
+            data.forEach((ele) => {
+              var li = document.createElement("li");
+              var img = document.createElement("img");
+              img.src = ele.image;
+              img.width = "70";
+              img.height = "70";
+
+              li.innerText = ele.title;
+              li.appendChild(img);
+
+              ol.appendChild(li);
+            });
+            document.getElementsByTagName("body")[0].appendChild(ol);
+          })
+          .catch((error) => {
+            alert("Something went Wrong");
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Products Information</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta
+      quisquam beatae repellendus omnis odit distinctio totam ratione dolorem,
+      modi mollitia veniam fuga asperiores dicta dolores, sapiente quae
+      accusantium labore nisi consequatur esse atque. Enim et voluptatem modi
+      omnis natus? Hic aut aspernatur dolores molestias quas ipsum omnis
+      voluptates laboriosam culpa, sapiente magni explicabo sequi eaque labore
+      dolorum non ut temporibus distinctio deleniti. Voluptatem et minima cum ad
+      impedit eligendi eius ipsa blanditiis illum repellat? Id, velit aliquam!
+      Iusto error nobis dolor, neque harum ab dolores eveniet necessitatibus vel
+      amet fugiat tenetur, laudantium a perferendis culpa at iste molestiae
+      illum, asperiores et autem doloribus tempore! Nam repellat corporis, ipsum
+      mollitia esse voluptate quasi impedit hic aperiam aspernatur iste natus
+      molestias vel, maiores eum. Cum dolores consectetur praesentium soluta
+      tenetur ea. Quasi aperiam illo voluptates, cumque saepe recusandae debitis
+      non? Quia expedita officiis mollitia quasi omnis fuga nisi incidunt ab
+      voluptatum corporis, officia iusto vero eos unde, reprehenderit molestiae
+      delectus error veritatis dolores? Facere odio quas a veritatis quisquam
+      nisi tempore placeat cum iure cupiditate earum, eveniet, dolor provident
+      recusandae voluptatibus alias! Enim labore officiis quasi accusamus porro
+      totam sequi corporis voluptates atque illum nulla asperiores eligendi et,
+      neque provident eum.
+    </p>
+
+    <button onclick="getdata()">Get Products</button>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeStyle() {
+        var pRef = document.getElementsByTagName("p");
+        console.log(pRef);
+        pRef[2].style.color = "red";
+        var pRef1 = document.getElementsByClassName("c1");
+        console.log(pRef1);
+      }
+    </script>
+  </head>
+  <body>
+    <p class="c1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum atque
+      molestias eos, eius debitis reiciendis quod nulla? Velit, earum ea.
+    </p>
+    <p class="c1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem ipsa
+      consequuntur cumque dolore iusto perspiciatis laboriosam modi earum
+      molestias.
+    </p>
+    <p class="c1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt incidunt
+      magni sapiente, nisi eligendi voluptatibus fuga excepturi neque tempore
+      quidem non unde aspernatur, alias aliquam veritatis distinctio delectus
+      quaerat, quo aut omnis nesciunt esse fugiat saepe. Illo a nihil officia.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum
+      perspiciatis, eos, molestiae cumque illum saepe dicta unde dignissimos ab
+      placeat numquam laboriosam doloremque minima quisquam rem optio alias!
+      Ullam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi delectus
+      pariatur eveniet assumenda aliquam, ut esse cumque ratione fugit
+      doloremque.
+    </p>
+
+    <button onclick="changeStyle()">Change Style</button>
+  </body>
+</html>
