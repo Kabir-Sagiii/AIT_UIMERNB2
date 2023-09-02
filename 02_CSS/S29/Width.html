@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container div {
+        width: 280px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      @media only screen and (orientation: landscape) {
+      }
+      @media only screen and (orientation: Portrait) {
+      }
+      @media only screen and (min-width: 0px) and (max-width: 3390px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+      @media only screen and (min-width: 340px) and (max-width: 560px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .container div {
+          width: 500px;
+        }
+        img {
+          width: 80%;
+        }
+      }
+
+      @media only screen and (min-width: 561px) and (max-width: 649px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .container div {
+          width: 250px;
+          padding: 10px;
+          box-shadow: 0 0 10px black;
+          text-align: center;
+        }
+      }
+      @media only screen and (min-width: 650px) and (max-width: 949px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media only screen and (min-width: 950px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/30/66/20/30662053e0251ff8a19851074ce09c27.jpg"
+          width="100%"
+          height="200"
+        />
+        <h2>John Chris</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolorum
+          ut autem adipisci laudantium quisquam veniam asperiores porro illo
+          cumque.
+        </p>
+        <button>Profile</button>
+      </div>
+      <div>
+        <img
+          src="https://th.bing.com/th/id/OIP.83rMHOqmoUNWYWBv5WLWLgAAAA?pid=ImgDet&rs=1"
+          width="100%"
+          height="200"
+        />
+        <h2>Pooja Reddy</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolorum
+          ut autem adipisci laudantium quisquam veniam asperiores porro illo
+          cumque.
+        </p>
+        <button>Profile</button>
+      </div>
+      <div>
+        <img
+          src="https://th.bing.com/th/id/OIP.vf6tqF3ZfAAvJsEqI5-ubgHaLH?pid=ImgDet&rs=1"
+          width="100%"
+          height="200"
+        />
+        <h2>Riya Sharma</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolorum
+          ut autem adipisci laudantium quisquam veniam asperiores porro illo
+          cumque.
+        </p>
+        <button>Profile</button>
+      </div>
+    </div>
+  </body>
+</html>

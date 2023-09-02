@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 500px 300px;
+      }
+    </style>
+    <script>
+      function getProduct(product) {
+        fetch(`http://localhost:7030/products/${product}`)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+            var div = document.getElementById("content");
+            div.firstChild.remove();
+            var ol = document.createElement("ol");
+            data.products.forEach((ele) => {
+              var li = document.createElement("li");
+              li.innerText = ele.model;
+              ol.appendChild(li);
+            });
+            div.appendChild(ol);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+
+      function load() {
+        fetch("http://localhost:7030/products")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+            var div = document.getElementById("content");
+            if (document.getElementsByTagName("input")[0].firstChild) {
+              div.firstChild.remove();
+            }
+
+            var ol = document.createElement("ol");
+            data.products.forEach((ele) => {
+              var li = document.createElement("li");
+              li.innerText = ele.model;
+              ol.appendChild(li);
+            });
+            div.appendChild(ol);
+          })
+          .catch((err) => {
+            document.getElementById("content").innerText =
+              "Something Went Wrong";
+          });
+      }
+    </script>
+  </head>
+  <body onload="load()">
+    <div class="container">
+      <div>
+        <div>
+          <input type="radio" name="products" onchange="load()" checked />ALL
+        </div>
+        <br />
+        <div>
+          <input
+            type="radio"
+            name="products"
+            onchange="getProduct('apple')"
+          />APPLE
+        </div>
+        <br />
+        <div>
+          <input
+            type="radio"
+            name="products"
+            onchange="getProduct('samsung')"
+          />SAMSUNG
+        </div>
+        <br />
+        <div>
+          <input
+            type="radio"
+            name="products"
+            onchange="getProduct('vivo')"
+          />VIVO
+        </div>
+        <br />
+      </div>
+
+      <div id="content"></div>
+    </div>
+  </body>
+</html>

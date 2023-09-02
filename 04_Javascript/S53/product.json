@@ -1,0 +1,30 @@
+{
+ "products":[
+    {
+        "brand":"apple",
+        "model":"iphone 14"
+    },{
+        "brand":"apple",
+        "model":"iphone 12"
+    },{
+        "brand":"samsung",
+        "model":"galaxy s23 ultra"
+    },
+    {
+        "brand":"samsung",
+        "model":"galaxy s21 "
+    },
+    {
+        "brand":"samsung",
+        "model":"Samsung A23 Pro"
+    },
+    {
+        "brand":"vivo",
+        "model":"Vivo A27 Pro"
+    },
+    {
+        "brand":"vivo",
+        "model":"Vivo s67 Gold"
+    }
+ ]
+}
