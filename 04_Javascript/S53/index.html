@@ -41,7 +41,7 @@
           .then((data) => {
             console.log(data);
             var div = document.getElementById("content");
-            if (document.getElementsByTagName("input")[0].firstChild) {
+            if (div.firstChild) {
               div.firstChild.remove();
             }
 
